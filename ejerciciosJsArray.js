@@ -4,15 +4,17 @@
 // secretName(['Harry', 'Ron', 'Hermione']) -> HHR
 
 const secretSociety = array => {
-    let secretName = [];
-    array.forEach(element => {
+        let secretName = [];
+        array.forEach(element => {
         secretName.push(element.charAt(0));
     });
 
-    return secretName;
+    sortedArray = secretName.sort()
+    return sortedArray.join('') ;
 };
 
 console.log(secretSociety(["Felipe", "Fer", "Zabdiel"]));
+console.log(secretSociety(['Phoebe', 'Ross', 'Chandler', 'Joey', 'Monica', 'Rachel']));
 
 const onlineStatus = array => {
     
@@ -52,7 +54,7 @@ const arrayMultiplos = (num1, num2) => {
         array.push(multiplos);
     }
 
-    return array
+    return array;
 }
 
 console.log(arrayMultiplos(2, 10)); //-> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
